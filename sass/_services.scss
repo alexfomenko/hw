@@ -1,0 +1,72 @@
+
+.services {
+     background-color: #f6f6f6;
+     padding: 150px 0 100px;  
+}
+
+.services_images {
+     margin-top: -100px;
+}
+
+.services_second_row {
+     margin-top: -192px;
+     margin-left: -186px;
+}
+
+.services_third_row {
+     margin-top: -193px;
+     margin-left: -554px;
+}
+
+.rhombus {
+     display: inline-block;
+     margin: 50px 0px;
+     width: 180px;
+     height: 200px;
+     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+     cursor: pointer;
+}
+
+.rhombus_text {
+     padding-top: 103px;
+     font-family: "Proxima Nova";
+     font-size: 14px;
+}
+
+.services_general {
+     background: #ffffff 50% 40% no-repeat;
+}
+
+.service_one {
+     background-image: url("../images/Chemical_Glass.png");
+}
+
+.service_two {
+     background-image: url("../images/Tools.png");
+}
+
+.service_three {
+     background-image: url("../images/Notes.png");
+}
+
+.service_four {
+     background-image: url("../images/Antenna_1.png");
+}
+
+.service_five {
+     background-image: url("../images/Layers.png");
+}
+
+.service_six {
+     background-image: url("../images/Shield.png");
+}
+
+.service_seven {
+     background-image: url("../images/Bulb.png");
+}
+
+.service_eight {
+     background: #28282e url("../images/Chart.png") 50% 40% no-repeat;
+     color: white;
+}
+

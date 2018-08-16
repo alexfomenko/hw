@@ -1,0 +1,38 @@
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+     .homepage, .services, .works, .project, .minds, .team, .vimeo {
+          padding: 50px 0;
+     }
+
+     .black_title, .white_title {
+          font-size: 43px;
+     }
+
+
+     .content {
+          width: 700px;
+          margin: 0 auto;
+     }
+     .col_left,.col_right {
+          float: none;
+          text-align: center;
+          margin: 0 auto;
+          width: 80%;
+     }
+
+     .team__subtitle_text {
+         float: none;
+    }
+   
+     .team_third_row,
+     .services_third_row {
+          margin-left: -184px;
+     }
+     .services_images,
+     .team_images {
+          padding-left: 10px;
+     }
+
+     .row_one, .hline_white, .hline_black {
+          display: none;
+     }
+}

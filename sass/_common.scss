@@ -1,0 +1,83 @@
+
+@font-face {
+     font-family: gotham;
+     src: url("../fonts/GothamRounded-Light.otf");
+}
+
+.white_title_homepage {
+     font-family: gotham;
+     font-size: 48px;
+     color: #f6f9fa;     
+}
+.proximanova_white-text {
+     font-family: "Proxima Nova";
+     font-size: 18px;
+     color:  #ffffff;
+     padding: 35px 0;
+}
+.proximanova_white-text_upper {
+     font-family: "Proxima Nova";
+     font-size: 18px;
+     color:  #ffffff;
+     text-transform: uppercase;
+}
+.proximanova_white-text_small {
+     color: #ffffff;
+     font-family: "Proxima Nova";
+     font-size: 16px;
+}
+.proximanova_black_text {
+     font-family: "Proxima Nova";
+     font-size: 18px;
+     padding: 40px 0;
+}
+
+.proximanova_black_text_upper {
+     font-family: "Proxima Nova";
+     font-size: 18px;
+     text-transform: uppercase;
+}
+.proximanova_black-text_small {
+     font-family: "Proxima Nova";
+     font-size: 16px;
+}
+.white_title {
+     font-family: "Open Sans";     
+     font-size: 53px;
+     color: #ffffff;
+}
+.black_title {
+     font-family: open sans;
+     font-size: 53px;
+     text-transform: uppercase;
+}
+.merriweather_title_red {
+     color: #ef443a;
+     font-family: Merriweather;
+     font-size: 14px;
+}
+.merriweather_title_white {
+     color: #f6f6f6;
+     font-family: Merriweather;
+     font-size: 39px;
+}
+
+.content {
+     width: 1300px;
+     margin: 0 auto;
+     text-align: center;
+}
+.col_left {
+     width: 40%;
+     float: left;
+     text-align: left;
+}
+.col_right {
+     width: 50%;
+     float: right;
+}
+.clearfix::after {
+     content: "";
+     clear: both;
+     display: table;
+}
