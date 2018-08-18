@@ -1,81 +1,110 @@
- @media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
-     .homepage, .services, .works, .project, .minds, .team, .vimeo {
-         padding: 10px 0;
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+    .homepage,
+    .services,
+    .works,
+    .project,
+    .minds,
+    .team,
+    .vimeo {
+        padding: 10px 0;
     }
-     .black_title, .white_title,.white_title_homepage, .merriweather_title_white {
-         font-size: 25px;
+    .black_title,
+    .white_title,
+    .white_title_homepage,
+    .merriweather_title_white {
+        font-size: 25px;
     }
-     .proximanova_white-text, .proximanova_black_text, 
-     .proximanova_black-text_small {
-         font-size: 14px;
-         padding: 15px 0;
+    .proximanova_white-text,
+    .proximanova_black_text,
+    .proximanova_black-text_small {
+        font-size: 14px;
+        padding: 15px 0;
     }
-     .content {
-         width: 300px;
-         margin: 0 auto;
+    .content {
+        width: 300px;
+        margin: 0 auto;
     }
-     .button_general {
-         width: 100px;
-         padding: 7px;
-         margin: 19px 0;
+    .button_general {
+        width: 100px;
+        padding: 7px;
+        margin: 19px 0;
     }
-     .col_left, .col_right {
-         float: none;
-         text-align: center;
-         margin: 0 auto;
-         width: 80%;
+    .col_left,
+    .col_right {
+        float: none;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
     }
-     .rhombus {
-         height: 100px;
-         clip-path: none;
-         display: inline-block;
-         width: 30%;
+    .col_left:after {
+        display: none;
     }
-     .rhombus_text {
-         display: none;
+    .rhombus {
+        height: 100px;
+        clip-path: none;
+        display: inline-block;
+        width: 30%;
     }
-     .services_first_row, .team_first_row {
-         margin-top: -40px;
+    .rhombus_text {
+        display: none;
     }
-
+    .services_first_row,
+    .team_first_row {
+        margin-top: -40px;
+    }
     .team__subtitle_text {
-         float: none;
+        float: none;
     }
-     .team_second_row, .services_second_row {
-         margin-top: -101px;
-         margin-left: 0px;
+    .team_second_row,
+    .services_second_row {
+        margin-top: -101px;
+        margin-left: 0px;
     }
-     .team_third_row, .services_third_row {
-         margin-top: -101px;
-         margin-left: -4px;
+    .team_third_row,
+    .services_third_row {
+        margin-top: -101px;
+        margin-left: -4px;
     }
-     .project_image {
-         background-size: 90% 87%, 100% 100%;
-         padding-top: 160px;
-    } 
-     .table {
-       margin: 5px 0 5px;
+    .project_image {
+        background-size: 90% 87%, 100% 100%;
+        padding-top: 160px;
     }
     .gadget_item {
-       margin: 1% 14% 8% 5%;
-    }   
-     .vimeo_top {
-         width: 80%;
-         margin: 0 auto;
+        margin: 1% 14% 8% 5%;
     }
-     .vimeo_content__image {
-         padding-top: 100px;
+    .grid-container-one {
+        display: none;
     }
-
+    .grid-container-two,
+    .grid-container-three,
+    .grid-container-nature,
+    .grid-container-five {
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+    }
+    .grid-item {
+        padding: 0;
+    }
+    .vimeo_top {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .vimeo_content__image {
+        padding-top: 100px;
+    }
     .footer_black {
-         padding: 10px;
+        padding: 10px;
     }
-     .footer_text {
-         width: 45%;
-         float: left;
-         margin: 0px 1%;
+    .footer_text {
+        width: 45%;
+        float: left;
+        margin: 0px 1%;
     }
-     .row_one, .hline_white, .hline_black, .vl {
-          display: none;
-     }
+    .row_one,
+    .hline_white,
+    .hline_black,
+    .vl {
+        display: none;
+    }
 }

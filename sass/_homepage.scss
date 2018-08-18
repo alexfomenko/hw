@@ -16,8 +16,16 @@
      display: table;
 }
 .homepage_content {
-     margin-top: 100px;
+    position: relative;
 }
+
+
+.homepage_content:after {
+    @extend .col_left:after;
+    background: white;
+    top: 265px;
+    left: 5px; }
+
 .col_left {
      width: 40%;
      float: left;
@@ -40,6 +48,6 @@
      text-transform: uppercase;
 }
 
-button:hover {
+.button:hover {
      background-color: #8B979C;
 }

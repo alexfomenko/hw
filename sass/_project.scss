@@ -3,25 +3,16 @@
      padding: 200px 0 200px;
 }
 
-/**
 .project_text {
      position: relative;
 }
 
-
-
 .project_text:after { 
-    content: "";
-    width: 10%;
-    height: 3px;
+    @extend .col_left:after;
     background: white;
-    position: absolute;
     top: 85px;
-    left: 5px;
-     
+    left: 5px;    
 }
-
-**/
 
 .project_image {
      background: url("../images/laptop.png") center no-repeat, url("../images/screen_elements.png")
@@ -29,7 +20,6 @@
      padding-top: 310px;
      position: relative;
 }
-
 
 .project_image_front {
      background: url("../images/front_shape.png") center no-repeat;
@@ -41,18 +31,6 @@
      background: url("../images/base_shape.png") center no-repeat;
      padding: 10px;
      margin-top: -12px;
-}
-
-.hline_white {
-     width: 5%;
-     height: 3px;
-     background: #fff;
-}
-
-.hline_black {
-     width: 5%;
-     height: 3px;
-     background: black;
 }
 
 .vl {

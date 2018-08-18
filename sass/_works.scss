@@ -2,6 +2,31 @@
      padding: 50px 0 100px;
 }
 
-.works_text {
+.works_text_left {
+	position: relative;
+}
+
+.works_text_left:after { 
+    @extend .col_left:after;
+    background: black;
+    top: 90px;
+    left: 0;    
+}
+
+
+/**
+.works_text_left:after { 
+    content: "";
+    width: 7%;
+    height: 3px;
+    background: black;
+    position: absolute;
+    top: 90px;
+    left: 0;    
+}
+
+**/
+
+.works_text_right {
 	text-align: left;
 }

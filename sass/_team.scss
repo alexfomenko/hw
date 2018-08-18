@@ -10,7 +10,18 @@
 }
 
 .team__subtitle_text {
-     float: left;
+     margin: 1px 60px 1px;
+}
+
+.team_text {
+    position: relative;
+}
+
+.team_text:after { 
+    @extend .col_left:after;
+    background: black;
+    top: 90px;
+    left: 0;    
 }
 
 .team_images {
