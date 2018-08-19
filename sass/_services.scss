@@ -1,7 +1,7 @@
 
 .services {
      background-color: #f6f6f6;
-     padding: 150px 0 100px;  
+     padding: 150px 0 50px;  
 }
 
 .services_text {
@@ -14,7 +14,6 @@
     top: 90px;
     left: 0;    
 }
-
 
 .services_images {
      margin-top: -100px;
@@ -37,16 +36,13 @@
      height: 200px;
      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
      cursor: pointer;
+     background: #ffffff 50% 40% no-repeat;
 }
 
 .rhombus_text {
      padding-top: 103px;
      font-family: "Proxima Nova";
      font-size: 14px;
-}
-
-.services_general {
-     background: #ffffff 50% 40% no-repeat;
 }
 
 .service_one {
@@ -78,7 +74,11 @@
 }
 
 .service_eight {
-     background: #28282e url("../images/Chart.png") 50% 40% no-repeat;
-     color: white;
+     background-image: url("../images/Chart.png");
+}
+
+.services_general:hover {
+     background-color: #28282e;
+     color: red;
 }
 
