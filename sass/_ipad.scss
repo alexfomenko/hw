@@ -42,6 +42,16 @@
     display: grid;
     grid-template-columns: 700px;
   }
+
+  .rhombus {
+     width: 175px;
+   }
+
+
+  .team_second_row,
+  .services_second_row {
+    margin-left: -184px;
+  }
   .team_third_row,
   .services_third_row {
     margin-left: -184px;

@@ -65,6 +65,12 @@
         margin-top: -101px;
         margin-left: -4px;
     }
+
+
+.team_member:hover .triangle {
+     display: none;
+}
+
     .project_image {
         background-size: 90% 87%, 100% 100%;
         padding-top: 160px;
