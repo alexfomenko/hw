@@ -15,7 +15,7 @@
 }
 
 .homepage_mask:before {
-  animation: example_three 2s ease-out forwards;
+  animation: slide_in_left 2s ease-out forwards;
   background: url("../images/homepage.png") center/cover no-repeat;
   content: "";
   position: absolute;
@@ -26,62 +26,56 @@
   z-index: -1;  
 }
 
+@keyframes slide_in_left {
+    from {left: -700px;}
+    to {left: 0;}
+}
+
+/*
 @keyframes example_three {
   0% {
     transform: translateX(-1300px);
     opacity: 0;  
-  }
-
+ }
   25% {
     transform: translateX(-624px); 
     opacity: 0.3;
-  }
-
+ }
   50% {
     transform: translateX(-324px); 
     opacity: 0.5;  
   }
-
   75% {
     transform: translateX(-124px); 
     opacity: 0.7; 
-  }
-  
+  }  
   100% {
    transform: none;
    opacity: 1;
   }
 }
 
-
-
-/*
-@keyframes example_three {
-  0% {
-    background-size: 25% 25%;
-    opacity: 0.2;
-  }
-  25% {
-    background-size: 50% 50%;
-    opacity: 0.5;
-  }
-  50% {
-    background-size: 75% 75%;
-    opacity: 0.7;
-  }
-  100% {
-   background-size: cover;
-   background-position: center;
-   opacity: 1;
-  }
-}
-
 */
+
 .homepage_header_logo,
 .homepage_header_text {
      float: left;
      margin: 10px;
 }
+
+.homepage_header_logo {
+  animation: rotation 2s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(359deg) scale(2);
+    }
+}
+
 .clearfix::after {
      content: "";
      clear: both;
@@ -89,8 +83,13 @@
 }
 .homepage_content {
     position: relative;
+    animation: slide_in_right 2s ease-out forwards;
 }
 
+@keyframes slide_in_right {
+    from {right: -700px;}
+    to {right: 0;}
+}
 
 .homepage_content:after {
     @extend .col_left:after;
@@ -120,6 +119,6 @@
      text-transform: uppercase;
 }
 
-.button:hover {
+.button_general:hover {
      background-color: #8B979C;
 }
