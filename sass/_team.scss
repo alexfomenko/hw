@@ -15,6 +15,14 @@
 
 .team_text {
     position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function:ease-out;
+}
+
+@keyframes example {
+    from {left: -700px;}
+    to {left: 0;}
 }
 
 .team_text:after { 
@@ -26,7 +34,18 @@
 
 .team_images {
      margin-top: -100px;
+     position: relative;
+     animation-name: example_two;
+     animation-duration: 2s;
+     animation-play-state: running;
+     animation-timing-function:ease-out;
 }
+
+@keyframes example_two {
+    from {right: -700px;}
+    to {right: 0;}
+}
+
 
 .team_second_row {
      margin-top: -200px;

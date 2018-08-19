@@ -1,10 +1,82 @@
 
 
 .homepage {
+    /*
      background: url("../images/homepage.png") center/cover;
-     background-size: cover;
+     background-size: 10% 10%;
+     background-repeat: no-repeat;
      padding: 50px 0 80px;
+     animation-duration: 2s;
+     animation-direction: alternate;
+     transition: transform 3s;
+     */
+     padding: 50px 0 80px;
+     position: relative;
 }
+
+.homepage_mask:before {
+  animation: example_three 1s ease-out forwards;
+  background: url("../images/homepage.png") center/cover no-repeat;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;  
+}
+
+@keyframes example_three {
+  0% {
+    transform: translateX(-1300px);
+    opacity: 0;  
+  }
+
+  25% {
+    transform: translateX(-624px); 
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translateX(-324px); 
+    opacity: 0.5;  
+  }
+
+  75% {
+    transform: translateX(-124px); 
+    opacity: 0.7; 
+  }
+  
+  100% {
+   transform: none;
+   opacity: 1;
+  }
+}
+
+
+
+/*
+@keyframes example_three {
+  0% {
+    background-size: 25% 25%;
+    opacity: 0.2;
+  }
+  25% {
+    background-size: 50% 50%;
+    opacity: 0.5;
+  }
+  50% {
+    background-size: 75% 75%;
+    opacity: 0.7;
+  }
+  100% {
+   background-size: cover;
+   background-position: center;
+   opacity: 1;
+  }
+}
+
+*/
 .homepage_header_logo,
 .homepage_header_text {
      float: left;
