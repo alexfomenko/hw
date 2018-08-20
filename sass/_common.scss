@@ -1,4 +1,5 @@
 
+/**
 @font-face {
      font-family: gotham;
      src: url("../fonts/GothamRounded-Light.otf");
@@ -62,29 +63,110 @@
      font-size: 39px;
 }
 
-.content {
+**/
+ @mixin breakpoint ($point) {
+     @if $point == phone {
+         @media only screen and (min-width: 320px) and (max-width: 480px) {
+             @content;
+        }
+    }
+     @else if $point == tablet {
+         @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+             @content;
+        }
+    }
+     @else if $point == desktop {
+         @media only screen and (min-width: 1300px) {
+             @content;
+        }
+    }
+}
+ .content {
      width: 1300px;
      margin: 0 auto;
      text-align: center;
+     @include breakpoint(phone) {
+         width: 300px;
+         margin: 0 auto;
+    }
+     @include breakpoint(tablet) {
+         width: 700px;
+         margin: 0 auto;
+    }
 }
-.col_left {
+ .col_left {
      width: 40%;
      float: left;
      text-align: left;
+     @include breakpoint(phone) {
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         width: 80%;
+    }
+     @include breakpoint(tablet) {
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         width: 80%;
+    }
 }
-.col_right {
+ .col_right {
      width: 50%;
      float: right;
+     @include breakpoint(phone) {
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         width: 80%;
+    }
+     @include breakpoint(tablet) {
+         float: none;
+         text-align: center;
+         margin: 0 auto;
+         width: 80%;
+    }
 }
-.clearfix::after {
+ .clearfix::after {
      content: "";
      clear: both;
      display: table;
 }
-
-.col_left:after {
-    content: "";
-    width: 7%;
-    height: 3px;
-    position: absolute; 
+ .col_left:after {
+     content: "";
+     width: 5%;
+     height: 3px;
+     position: absolute;
+     @include breakpoint(phone) {
+         display: none;
+    }
+     @include breakpoint(tablet) {
+         display: none;
+    }
 }
+ .homepage_par, .services_par, .project_par, .team_par {
+     padding: 50px 0;
+     @include breakpoint(phone) {
+         padding: 10px 0;
+    }
+     @include breakpoint(tablet) {
+         padding: 10px 0;
+    }
+}
+
+ .button_general {
+     width: 130px;
+     padding: 13px;
+     margin: 30px 0;
+     background: transparent;
+     border: 2px solid #f6f6f6;
+     @include breakpoint(phone) {
+         width: 100px;
+         padding: 7px;
+         margin: 19px 0;
+     }
+}
+ .button_general:hover {
+     background-color: #8B979C;
+}
+

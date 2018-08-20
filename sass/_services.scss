@@ -1,35 +1,29 @@
-
-.services {
+ .services {
      background-color: #f6f6f6;
-     padding: 150px 0 50px;  
+     padding: 150px 0 50px;
+     @include breakpoint(phone) {
+         padding: 10px 0;
+    }
+     @include breakpoint(tablet) {
+         padding: 50px 0;
+    }
 }
-
-.services_text {
-    position: relative;
+ .services_text {
+     position: relative;
 }
-
-.services_text:after { 
-    @extend .col_left:after;
-    background: black;
-    top: 90px;
-    left: 0;    
+ .services_text:after {
+     @extend .col_left:after;
+     background: black;
+     top: 90px;
+     left: 0;
 }
-
-.services_images {
+ .services_images {
      margin-top: -100px;
+     @include breakpoint(tablet){
+         padding-left: 10px;
+    }
 }
-
-.services_second_row {
-     margin-top: -194px;
-     margin-left: -204px;
-}
-
-.services_third_row {
-     margin-top: -193px;
-     margin-left: -613px;
-}
-
-.rhombus {
+ .rhombus {
      display: inline-block;
      margin: 50px 0px;
      width: 200px;
@@ -37,61 +31,85 @@
      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
      cursor: pointer;
      background: #ffffff 50% 40% no-repeat;
+     @include breakpoint(phone) {
+         height: 80px;
+         clip-path: none;
+         width: 30%;
+    }
+    @include breakpoint(tablet) {
+        width: 175px;
+    }
 }
-
-.rhombus_text {
+ .rhombus_text {
      padding-top: 103px;
-     font-family: "Proxima Nova";
-     font-size: 14px;
+     @include breakpoint(phone) {
+         display: none;
+    }
 }
-
-.service_one {
+ .services_first_row {
+     @include breakpoint(phone) {
+         margin-top: -40px;
+    }
+}
+ .services_second_row {
+     margin-top: -194px;
+     margin-left: -204px;
+     @include breakpoint (phone){
+         margin-top: -101px;
+         margin-left: 0px;
+    }
+     @include breakpoint(tablet){
+         margin-left: -184px;
+    }
+}
+ .services_third_row {
+     margin-top: -193px;
+     margin-left: -613px;
+     @include breakpoint (phone){
+         margin-top: -101px;
+         margin-left: -4px;
+    }
+     @include breakpoint(tablet){
+         margin-left: -184px;
+    }
+}
+ .service_one {
      background-image: url("../images/Chemical_Glass.png");
 }
-
-.service_two {
+ .service_two {
      background-image: url("../images/Tools.png");
 }
-
-.service_three {
+ .service_three {
      background-image: url("../images/Notes.png");
 }
-
-.service_four {
+ .service_four {
      background-image: url("../images/Antenna_1.png");
 }
-
-.service_five {
+ .service_five {
      background-image: url("../images/Layers.png");
 }
-
-.service_six {
+ .service_six {
      background-image: url("../images/Shield.png");
 }
-
-.service_seven {
+ .service_seven {
      background-image: url("../images/Bulb.png");
 }
-
-.service_eight {
+ .service_eight {
      background-image: url("../images/Chart.png");
 }
-
-.services_general:hover {
+ .rhombus:hover {
      background-color: #28282e;
      color: red;
      animation: removed-item-animation 1s;
      animation-delay: .5s;
 }
-
-@keyframes removed-item-animation {
-    0% {
-        transform: rotate(0);
-}
-    100% {
-        opacity: 0;
-        transform: translateX(600px) rotate(180deg);
+ @keyframes removed-item-animation {
+     0% {
+         transform: rotate(0);
+    }
+     100% {
+         opacity: 0;
+         transform: translateX(600px) rotate(180deg);
     }
 }
-
-
+ 

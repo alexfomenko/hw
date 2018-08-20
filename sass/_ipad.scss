@@ -1,13 +1,9 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .homepage,
-  .services,
-  .works,
-  .project,
-  .minds,
-  .team,
-  .vimeo {
-    padding: 50px 0;
-  }
+
+
+
+
+  /*
   .black_title,
   .white_title {
     font-size: 43px;
@@ -15,6 +11,8 @@
   .proximanova_black_text {
     padding: 0;
   }
+
+
   .content {
     width: 700px;
     margin: 0 auto;
@@ -29,9 +27,9 @@
   .col_left:after {
     display: none;
   }
-  .team__subtitle_text {
-    float: none;
-  }
+  */
+
+  /*
   .grid-container-one {
     display: none;
   }
@@ -42,11 +40,7 @@
     display: grid;
     grid-template-columns: 700px;
   }
-
-  .rhombus {
-     width: 175px;
-   }
-
+*
 
   .team_second_row,
   .services_second_row {
@@ -56,13 +50,9 @@
   .services_third_row {
     margin-left: -184px;
   }
+
+
   .services_images,
   .team_images {
     padding-left: 10px;
   }
-  .row_one,
-  .hline_white,
-  .hline_black {
-    display: none;
-  }
-}

@@ -1,58 +1,61 @@
 .minds {
-    padding: 50px 0 10px;
+     padding: 50px 0 10px;
+     @include breakpoint(phone) {
+         padding: 10px 0;
+    }
+     @include breakpoint(tablet) {
+         padding: 50px 0;
+    }
 }
-
-.minds_text_right {
-    text-align: left;
+ .minds_text_right {
+     text-align: left;
 }
-
-.minds_text_left {
-    position: relative;
+ .minds_text_left {
+     position: relative;
 }
-
-.minds_text_left:after {
-    content: "";
-    width: 7%;
-    height: 3px;
-    position: absolute; 
-    background: black;
-    top: 90px;
-    left: 0;
+ .minds_text_left:after {
+     content: "";
+     width: 7%;
+     height: 3px;
+     position: absolute;
+     background: black;
+     top: 90px;
+     left: 0;
 }
-
-.minds_footer {
-    padding: 40px 0 20px;
+ .grid-container {
+     text-align: left;
+     margin-top: 50px;
 }
-
-.row {
-    text-align: left;
-    padding: 10px 0;
-    border-bottom: 1px solid #888888;
+ .grid-container-one, .grid-container-two, .grid-container-three, .grid-container-nature, .grid-container-five {
+     display: grid;
+     grid-template-columns: 60% 20% 20%;
+     @include breakpoint(phone) {
+         grid-template-columns: 90%;
+         justify-content: center;
+    }
+     @include breakpoint(tablet) {
+         grid-template-columns: 90%;
+    }
 }
-
-.col-md-6-white {
-    color: white;
+ .grid-container-one {
+     @include breakpoint(phone) {
+         display: none;
+    }
+     @include breakpoint(tablet){
+         display: none;
+    }
 }
-
-.grid-container {
-    text-align: left;
-    margin-top: 50px;
+ .grid-container-nature {
+     background: url("../images/nature.png") center / cover;
 }
-
-.grid-container-one,
-.grid-container-two,
-.grid-container-three,
-.grid-container-nature,
-.grid-container-five {
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
+ .grid-item {
+     border-bottom: 1px solid #999999;
+     padding: 5px;
+     @include breakpoint(phone){
+        padding: 0;
+     }
 }
-
-.grid-container-nature {
-    background: url("../images/nature.png") center / cover;
+ .minds_footer {
+     padding: 40px 0 20px;
 }
-
-.grid-item {
-    border-bottom: 1px solid #999999;
-    padding: 5px;
-}
+ 

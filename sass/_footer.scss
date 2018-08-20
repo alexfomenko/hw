@@ -1,15 +1,23 @@
 .footer_red {
      background-color: #ef4035;
-     padding: 2px;
+     padding: 15px;
+     @include breakpoint(phone) {
+        padding: 5px 0;
+     }
 }
-
-.footer_black {
+ .footer_black {
      background-color: #28282e;
      padding: 50px;
+     @include breakpoint(phone) {
+         padding: 10px;
+    }
 }
-
-.footer_text {
+ .footer_text {
      float: left;
      width: 23%;
      margin: 0 1%;
+     @include breakpoint(phone) {
+         width: 45%;
+    }
 }
+ 

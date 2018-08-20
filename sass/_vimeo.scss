@@ -1,26 +1,35 @@
-
-.vimeo {
+ .vimeo {
      background-color: #28282e;
      padding: 70px 0 70px;
+     @include breakpoint(phone) {
+         padding: 10px 0;
+    }
+     @include breakpoint(phone) {
+         padding: 50px 0;
+    }
 }
-
-.vimeo_top {
+ .vimeo_header {
      width: 624px;
      margin: 0 auto;
+     @include breakpoint(phone) {
+         width: 80%;
+         margin: 0 auto;
+    }
 }
-
-.vimeo_content__image {
+ .vimeo_content__image {
      background: url("../images/mountains.png") center/contain no-repeat;
      padding-top: 350px;
      margin: 20px;
+     @include breakpoint(phone) {
+         padding-top: 100px;
+    }
 }
-
-.vimeo_bullets {
+ .vimeo_bullets {
      width: 250px;
      margin: 0 auto;
+     font-size: 0;
 }
-
-.vimeo_bullet {
+ .vimeo_bullet {
      display: inline-block;
      border-radius: 50%;
      width: 10px;
@@ -28,7 +37,6 @@
      background: black;
      margin: 0 10px;
 }
-
-.vimeo_bullet:hover {
+ .vimeo_bullet:hover {
      background-color: white;
 }
