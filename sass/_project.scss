@@ -14,8 +14,8 @@
  .project_text:after {
      @extend .col_left:after;
      background: white;
-     top: 85px;
-     left: 5px;
+     top: 90px;
+     left: 0;
 }
  .project_image {
      background: url("../images/laptop.png") center no-repeat, url("../images/screen_elements.png") center no-repeat;

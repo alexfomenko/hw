@@ -88,7 +88,7 @@
      @include breakpoint (tablet) {
      font-size: 42px;} }
 
- @mixin opensans ($f-family: "Open Sans", $f-size: 53px, $f-color: null) {
+ @mixin opensans ($f-family: "Open Sans", $f-size: 50px, $f-color: null) {
      font-family: $f-family;
      font-size: $f-size;
      color: $f-color;
