@@ -26,6 +26,9 @@
  .grid-container {
      text-align: left;
      margin-top: 50px;
+     @include breakpoint(phone) {
+        margin-top: 0;
+     }
 }
  .grid-container-one, .grid-container-two, .grid-container-three, .grid-container-nature, .grid-container-five {
      display: grid;
@@ -33,9 +36,11 @@
      @include breakpoint(phone) {
          grid-template-columns: 90%;
          justify-content: center;
+         border-bottom: 1px solid #999999;
     }
      @include breakpoint(tablet) {
          grid-template-columns: 90%;
+         border-bottom: 1px solid #999999;
     }
 }
  .grid-container-one {
@@ -54,6 +59,11 @@
      padding: 5px;
      @include breakpoint(phone){
         padding: 0;
+        border-bottom: none;
+     }
+    @include breakpoint(tablet){
+        padding: 0;
+        border-bottom: none;
      }
 }
  .minds_footer {
